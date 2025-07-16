@@ -1,7 +1,18 @@
+
+
 import React from 'react';
 
-function StackList({ name }) {
-  return <h1>Hello, {name}!</h1>;
+export interface StackListProps {
+  name: string;
+  surname: string;
 }
 
-export default StackList;
+export const Stacklist: React.FC<StackListProps> = ({ name, surname }) => {
+  return (
+    <div>
+      <h1>{name}</h1>
+      <p>{surname}</p>
+    </div>
+  );
+};
+
