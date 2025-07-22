@@ -1,6 +1,6 @@
  import './App.css'
 import {Stacklist} from './components/StackList/index.tsx'
-import { MapFunction } from './components/MapFunction.tsx'  
+import { ArrayMethodMap } from './components/ArrayMethodMap.tsx'  
 
 
 
@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-    <MapFunction />
+    <ArrayMethodMap />
     <div> <Stacklist name="raz" surname="daw"/> </div>
     </>
   )
