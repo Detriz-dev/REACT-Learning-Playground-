@@ -1,8 +1,13 @@
 import { bicycles } from "../data-base/BicycleDataBase";    
 
 export function ArrayMethodMap(){
-
-    return <div><p>{bicycles[0].name}</p></div>
-
-
+    return (
+        <div>
+            <ul>
+                {bicycles.map((bicycle, index) => (
+                    <li key={index}>{bicycle.name}{bicycle.owner}</li>
+                ))}
+            </ul>
+        </div>
+    );
 }
