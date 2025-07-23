@@ -6,12 +6,17 @@ export function ArrayMethodSet(){
      
 
     return (
-        uniqueStatus.map((unique,index) => (
+        
+        <div>
+        <h3>Array method - set </h3>
+        {uniqueStatus.map((unique,index) => (
+                    <p key={index}> {unique}</p>
 
-         
-            <p key={index}> {unique.status}</p>
-
-        )))
+        ))}
+        </div>
+       
+        
+        )
     
        
 }
