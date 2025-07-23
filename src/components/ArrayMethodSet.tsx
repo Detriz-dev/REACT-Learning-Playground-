@@ -1,19 +1,17 @@
 import { bicycles } from "../data-base/BicycleDataBase";    
 
 export function ArrayMethodSet(){
+    const uniqueStatus = [...new Set(bicycles.map( bicycle =>  bicycle.status))]
+
      
+
     return (
+        uniqueStatus.map((unique,index) => (
 
-        [... new Set(bicycles.map( (bicycle, index) => (
+         
+            <p key={index}> {unique.status}</p>
 
-        <div id={index}> {bicycle.status} </div>
-            
-        )
-        )
-        )
-    ]
-
-
-    ) 
+        )))
+    
        
 }
